@@ -1,0 +1,10 @@
+.HomePage {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .HomePage {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

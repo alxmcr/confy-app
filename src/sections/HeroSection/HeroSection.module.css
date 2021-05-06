@@ -16,6 +16,7 @@
   background-color: gold;
   color: black;
   display: block;
+  font-weight: 700;
   padding: 0.8rem;
   margin: 0 auto;
   text-decoration: none;
@@ -36,13 +37,16 @@
 
 .heroSectionLocation {
   font-size: 1.1em;
+  margin: 0;
 }
 
 .heroSectionDescription {
   font-size: 1.3em;
+  margin: 0;
 }
 
 .heroSectionTitle {
+  font-family: "Bungee Inline", cursive;
   font-size: 4em;
+  margin: 0;
 }
-

@@ -1,0 +1,33 @@
+.SpeakersGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 430px) {
+  .SpeakersGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .SpeakersGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .SpeakersGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin: 0 auto;
+  }
+}

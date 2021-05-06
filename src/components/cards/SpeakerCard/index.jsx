@@ -15,21 +15,17 @@ export function SpeakerCard({ speaker }) {
     return (
         <div className={styles.SpeakerCard} id={id}>
             <img className={styles.speakerCardImage} src={photo} alt={name} />
-            <ul className={styles.speakerCardDetails}>
-                <li className={styles.speakerCardNameInfo}>
-                    <span className="speaker__text speaker__text--bold">{firstname} {lastname}</span>
+            <ul className={styles.speakerCardList}>
+                <li className={styles.speakerCardItem}>
+                    <span className={styles.speakerCardFullName}>{firstname} {lastname}</span>
                 </li>
-                <li className={styles.speakerCardSocialInfo}>
-                    <span className="speaker__text">
-                        <a className="speaker__link" href={`https://twitter.com/${twitter}`}>{`@${twitter}`}</a>
-                    </span>
+                <li className={styles.speakerCardItem}>
+                    <a className={styles.speakerCardLink} href={`https://twitter.com/${twitter}`}>{`@${twitter}`}</a>
                 </li>
-                <li className={styles.speakerCardWebsiteInfo}>
-                    <span className="speaker__text">
-                        <a className="speaker__link speaker__link--globe" href={websiteURL}>
-                            <FontAwesomeIcon icon={faGlobeAmericas} />
-                        </a>
-                    </span>
+                <li className={styles.speakerCardItem}>
+                    <a className={styles.speakerCardLink} href={websiteURL}>
+                        <FontAwesomeIcon icon={faGlobeAmericas} />
+                    </a>
                 </li>
             </ul>
         </div>
