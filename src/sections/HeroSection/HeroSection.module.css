@@ -1,0 +1,48 @@
+.HeroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.heroSectionBody {
+  background-color: gold;
+  color: black;
+  padding: 0.8rem;
+  margin: 1.25rem 0;
+}
+
+.HeroSectionLinkCTA {
+  background-color: gold;
+  color: black;
+  display: block;
+  padding: 0.8rem;
+  margin: 0 auto;
+  text-decoration: none;
+  width: 9.4rem;
+}
+
+.HeroSectionLinkCTA:hover {
+  transform: rotate(10deg);
+}
+
+.heroSectionTitle,
+.heroSectionDescription,
+.heroSectionDate,
+.heroSectionLocation {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.heroSectionLocation {
+  font-size: 1.1em;
+}
+
+.heroSectionDescription {
+  font-size: 1.3em;
+}
+
+.heroSectionTitle {
+  font-size: 4em;
+}
+
