@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react/cjs/react.production.min"
+import { useEffect, useState } from "react";
 
 export function useSpeakers() {
     const [loading, setLoading] = useState(false);
@@ -7,6 +7,11 @@ export function useSpeakers() {
 
     useEffect(() => {
         setLoading(true);
+        fetch("https://randomuser.me/api/?results=12")
+            .then(response => response.json())
+            .then(data => setSpeakers(data.results))
+            .catch(err => setError(err))
+            .finally(() => setLoading(false));
 
     }, [])
 
