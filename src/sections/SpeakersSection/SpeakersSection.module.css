@@ -2,8 +2,8 @@
   margin: 1rem 0;
 }
 
-@media screen and (min-width: 650px) {
-  .SpeakersSection {
-   
-  }
+.speakersSectionTitle {
+  font-family: "Bungee Inline", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
