@@ -1,0 +1,18 @@
+.TalkCard {
+  border-bottom: 1px solid gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0;
+}
+
+.TalkSpeakerPhoto {
+  border-radius: 0.5rem;
+  display: block;
+  width: 4.4rem;
+}
+
+.TalkTime {
+  font-size: 1.3em;
+  padding: 0.8rem 0;
+}
