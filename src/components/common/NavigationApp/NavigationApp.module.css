@@ -1,0 +1,26 @@
+.navApp {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  display: none;
+}
+
+.navAppShow {
+  display: flex;
+}
+
+.NavigationLink {
+  color: var(--color-primary-text);
+  text-decoration: none;
+}
+
+.NavigationLinkCTA {
+  background-color: var(--color-primary);
+  text-decoration: none;
+}
+
+.NavigationLinkCTA:active,
+.NavigationLinkCTA:visited,
+.NavigationLink:active,
+.NavigationLink:visited {
+  color: var(--color-primary-text);
+}

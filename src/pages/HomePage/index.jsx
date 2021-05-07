@@ -12,7 +12,6 @@ export function HomePage() {
             <SpeakersSection />
             <ScheduleSection />
             <TicketsSection />
-            <FooterApp />
         </div>
     )
 }
