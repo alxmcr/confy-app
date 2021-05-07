@@ -20,10 +20,10 @@ export function SpeakerCard({ speaker }) {
                     <span className={styles.speakerCardFullName}>{firstname} {lastname}</span>
                 </li>
                 <li className={styles.speakerCardItem}>
-                    <a className={styles.speakerCardLink} href={`https://twitter.com/${twitter}`}>{`@${twitter}`}</a>
+                    <a className={styles.speakerCardLinkTwitter} href={`https://twitter.com/${twitter}`}>{`@${twitter}`}</a>
                 </li>
                 <li className={styles.speakerCardItem}>
-                    <a className={styles.speakerCardLink} href={websiteURL}>
+                    <a className={styles.speakerCardLinkWebsite} href={websiteURL}>
                         <FontAwesomeIcon icon={faGlobeAmericas} />
                     </a>
                 </li>

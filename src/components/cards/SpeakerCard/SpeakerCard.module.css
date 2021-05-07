@@ -27,15 +27,18 @@
   width: 5rem;
 }
 
-.speakerCardLink {
+.speakerCardLinkTwitter,
+.speakerCardLinkWebsite {
     color: var(--color-primary-text);
   display: block;
   text-align: center;
   text-decoration: none;
 }
 
-.speakerCardLink:active,
-.speakerCardLink:visited {
+.speakerCardLinkTwitter:active,
+.speakerCardLinkTwitter:visited
+.speakerCardLinkWebsite:active,
+.speakerCardLinkWebsite:visited {
     color: var(--color-primary-text);
 }
 
