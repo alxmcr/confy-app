@@ -1,5 +1,15 @@
-.TicketPaymentCard{
-    background-color: var(--color-primary);
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px #fff;
+.TicketPaymentCard {
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px #fff;
+  color: var(--color-primary-text);
+  padding: 0.5rem;
+}
+
+.TicketPaymentPrice{
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
 }

@@ -38,24 +38,27 @@ export function TicketCheckoutForm() {
 
     return <form className={styles.TicketCheckoutForm}>
         <div className={styles.TicketCheckoutInputGroup}>
-            <label className="checkout__label"
+            <label className={styles.TicketCheckoutLabel}
                 htmlFor="fullname">Cardholder name:</label>
-            <input className="checkout__input" type="text"
-                id="fullname" name="fullname" value={fullname}
+            <input className={styles.TicketCheckoutInput}
+                type="text"
+                id="fullname"
+                name="fullname"
+                value={fullname}
                 onChange={handleChangeFullname} />
         </div>
         <div className={styles.TicketCheckoutInputGroup}>
-            <label className="checkout__label"
+            <label className={styles.TicketCheckoutLabel}
                 htmlFor="creditCardNumber">Credit card Number:</label>
-            <input className="checkout__input"
+            <input className={styles.TicketCheckoutInput}
                 type="text"
                 id="creditCardNumber"
                 name="creditCardNumber"
                 value={creditCardNumber}
                 onChange={handleChangeCreditCardNumber} />
-            <label className="checkout__label"
+            <label className={styles.TicketCheckoutLabel}
                 htmlFor="cvvNumber">CVV Number:</label>
-            <input className="checkout__input"
+            <input className={styles.TicketCheckoutInput}
                 type="text"
                 id="cvvNumber"
                 name="cvvNumber"
@@ -63,9 +66,9 @@ export function TicketCheckoutForm() {
                 onChange={handleChangeCVVNumber} />
         </div>
         <div className={styles.TicketCheckoutInputGroup}>
-            <label className="checkout__label"
+            <label className={styles.TicketCheckoutLabel}
                 htmlFor="expirationDate">Expiration Date:</label>
-            <input className="checkout__input"
+            <input className={styles.TicketCheckoutInput}
                 type="date"
                 id="date" name="expirationDate"
                 value={expirationDate}

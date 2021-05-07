@@ -4,7 +4,7 @@ import styles from './TicketPaymentCard.module.css'
 export function TicketPaymentCard() {
     return (
         <div className={styles.TicketPaymentCard}>
-            <h3>$ 39 / ticket</h3>
+            <h3 className={styles.TicketPaymentPrice}>$ 39</h3>
             <TicketCheckoutForm />
         </div>
     )
