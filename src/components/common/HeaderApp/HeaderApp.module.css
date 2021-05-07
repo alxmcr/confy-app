@@ -9,6 +9,9 @@
 
 @media screen and (min-width: 700px) {
   .HeaderApp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 75%;
   }
 }

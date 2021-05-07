@@ -8,10 +8,10 @@ export function NavigationApp({ showMenu = true }) {
                 <li className={styles.NavigationItem}>
                     <a href="#speakers" className={styles.NavigationLink}>Speakers</a>
                 </li>
-                <li>
+                <li className={styles.NavigationItem}>
                     <a href="#schedule" className={styles.NavigationLink}>Schedule</a>
                 </li>
-                <li>
+                <li className={styles.NavigationItem}>
                     <a href="#tickets" className={styles.NavigationLinkCTA}>Tickets</a>
                 </li>
             </ul>
