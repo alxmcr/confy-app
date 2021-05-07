@@ -1,4 +1,3 @@
-import { FooterApp } from 'components/common/FooterApp'
 import { HeroSection } from 'sections/HeroSection'
 import { ScheduleSection } from 'sections/ScheduleSection'
 import { SpeakersSection } from 'sections/SpeakersSection'
