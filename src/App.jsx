@@ -1,11 +1,12 @@
 import './App.css';
-import { HomePage } from 'pages/HomePage';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { SwitchRoutesApp } from 'routing/SwitchRoutesApp';
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <Router>
+      <SwitchRoutesApp />
+    </Router>
   );
 }
 
