@@ -3,7 +3,7 @@ import styles from './ScheduleSection.module.css'
 
 export function ScheduleSection() {
     return (
-        <section className={styles.ScheduleSection}>
+        <section id="schedule" className={styles.ScheduleSection}>
             <h2 className={styles.ScheduleSectionTitle}>Schedule</h2>
             <TalksList />
         </section>

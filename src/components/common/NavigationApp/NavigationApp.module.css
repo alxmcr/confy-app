@@ -1,26 +1,64 @@
 .navApp {
-  background-color: var(--color-primary);
-  color: var(--color-primary-text);
   display: none;
 }
 
 .navAppShow {
+  background-color: var(--color-primary-text);
+  color: var(--color-primary);
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.NavigationItem {
+  border-bottom: 1px solid var(--color-primary);
 }
 
 .NavigationLink {
-  color: var(--color-primary-text);
+  color: var(--color-primary);
+  display: block;
+  padding: 1rem;
+  text-align: center;
   text-decoration: none;
+  width: 100%;
+}
+
+.NavigationLink:active,
+.NavigationLink:visited {
+  color: var(--color-primary);
+}
+
+.NavigationLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  transform: scale(1.1);
 }
 
 .NavigationLinkCTA {
   background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  display: block;
+  padding: 1rem;
+  text-align: center;
   text-decoration: none;
+  width: 100%;
+}
+
+.NavigationLinkCTA:hover {
+  transform: rotate(15deg);
 }
 
 .NavigationLinkCTA:active,
-.NavigationLinkCTA:visited,
-.NavigationLink:active,
-.NavigationLink:visited {
+.NavigationLinkCTA:visited {
   color: var(--color-primary-text);
+}
+
+.NavigationList {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
