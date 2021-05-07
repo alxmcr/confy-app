@@ -1,3 +1,4 @@
+![Logo](https://raw.githubusercontent.com/alxmcr/confy-app/main/public/logo-confy.png?token=ACCJR2KIQUCECGRP7BVVT7LASS5SS)
 
 # Confy
 
