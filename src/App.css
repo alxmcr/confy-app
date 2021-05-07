@@ -11,6 +11,10 @@
   --color-primary-text: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-primary-text);
   font-family: "Open Sans", sans-serif;
