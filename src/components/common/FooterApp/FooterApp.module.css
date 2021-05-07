@@ -1,0 +1,12 @@
+.FooterAppText {
+  text-align: center;
+}
+
+.FooterAppLink {
+  color: var(--text-color-primary);
+}
+
+.FooterAppLink:active,
+.FooterAppLink:visited {
+  color: var(--text-color-primary);
+}

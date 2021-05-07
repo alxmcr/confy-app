@@ -1,3 +1,4 @@
+import { FooterApp } from 'components/common/FooterApp'
 import { HeroSection } from 'sections/HeroSection'
 import { ScheduleSection } from 'sections/ScheduleSection'
 import { SpeakersSection } from 'sections/SpeakersSection'
@@ -11,6 +12,7 @@ export function HomePage() {
             <SpeakersSection />
             <ScheduleSection />
             <TicketsSection />
+            <FooterApp />
         </div>
     )
 }
