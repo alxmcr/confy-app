@@ -8,6 +8,7 @@ export function TicketCheckoutForm() {
     const [cvvNumber, setCvvNumber] = useState("");
     const [expirationDate, setExpirationDate] = useState("");
     const [isDisabledSubmit, setIsDisabledSubmit] = useState(true);
+    const [submitted, setSubmitted] = useState(false);
 
     // Input Handlers
     const handleChangeFullname = (e) => setFullname(e.target.value)
@@ -16,9 +17,16 @@ export function TicketCheckoutForm() {
     const handleChangeExpirationDate = (e) => setExpirationDate(e.target.value)
 
     // Button Handlers
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        alert("Payment processed. Thanks! See you soon :) ")
+    const handlerSendForm = (e) => {
+        e.preventDefault();
+        setSubmitted(true);
+        resetForm();
+    }
+    const resetForm = () => {
+        setFullname("");
+        setCreditCardNumber("");
+        setCvvNumber("");
+        setExpirationDate("");
     }
 
     // useEffect
@@ -36,7 +44,12 @@ export function TicketCheckoutForm() {
 
     }, [fullname, creditCardNumber, cvvNumber, expirationDate])
 
-    return <form className={styles.TicketCheckoutForm}>
+    if (submitted) return (
+        <p className={styles.TicketCheckoutInfoMessage}>Payment processed. <br /> Thanks! See you soon :)</p>
+    )
+
+    return <form className={styles.TicketCheckoutForm}
+        onSubmit={handlerSendForm} onReset={resetForm}>
         <div className={styles.TicketCheckoutInputGroup}>
             <label className={styles.TicketCheckoutLabel}
                 htmlFor="fullname">Cardholder name:</label>
@@ -45,7 +58,9 @@ export function TicketCheckoutForm() {
                 id="fullname"
                 name="fullname"
                 value={fullname}
-                onChange={handleChangeFullname} />
+                onChange={handleChangeFullname}
+                placeholder="Write your fullname here"
+            />
         </div>
         <div className={styles.TicketCheckoutInputGroup}>
             <label className={styles.TicketCheckoutLabel}
@@ -55,7 +70,9 @@ export function TicketCheckoutForm() {
                 id="creditCardNumber"
                 name="creditCardNumber"
                 value={creditCardNumber}
-                onChange={handleChangeCreditCardNumber} />
+                onChange={handleChangeCreditCardNumber}
+                placeholder="Write your credit card number here"
+            />
             <label className={styles.TicketCheckoutLabel}
                 htmlFor="cvvNumber">CVV Number:</label>
             <input className={styles.TicketCheckoutInput}
@@ -63,7 +80,9 @@ export function TicketCheckoutForm() {
                 id="cvvNumber"
                 name="cvvNumber"
                 value={cvvNumber}
-                onChange={handleChangeCVVNumber} />
+                onChange={handleChangeCVVNumber}
+                placeholder="Write your CVV number here"
+            />
         </div>
         <div className={styles.TicketCheckoutInputGroup}>
             <label className={styles.TicketCheckoutLabel}
@@ -72,12 +91,14 @@ export function TicketCheckoutForm() {
                 type="date"
                 id="date" name="expirationDate"
                 value={expirationDate}
-                onChange={handleChangeExpirationDate} />
+                onChange={handleChangeExpirationDate}
+                placeholder="Write your experation date here"
+            />
         </div>
         <div className={styles.TicketCheckoutFormActions}>
             <button disabled={isDisabledSubmit}
-                className="checkout__button checkout__button--checkout" type="submit"
-                onClick={handleSubmit}>Make a payment</button>
+                className={styles.TicketCheckoutButton}
+                type="submit">Make a payment</button>
         </div>
     </form>
 }
