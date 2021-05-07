@@ -1,0 +1,10 @@
+.TicketsSection {
+  margin: 1.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.TicketsSectionTitle {
+  font-family: "Bungee Inline", cursive;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
