@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/alxmcr/confy-app/main/public/logo-confy.png?token=ACCJR2KIQUCECGRP7BVVT7LASS5SS)
+![Logo](https://res.cloudinary.com/images-alex-projects/image/upload/v1620431934/Portfolio/confy-images/logo-confy_jltiwv.png)
 
 # Confy
 
@@ -55,11 +55,11 @@ Start the server
 
 Desktop version
 
-![Desktop Version](https://raw.githubusercontent.com/alxmcr/confy-app/main/screenshoots/desktop/confy-desktop.png?token=ACCJR2J5IE3JOGOZGWVKJOLASS46W)
+![Desktop Version](https://res.cloudinary.com/images-alex-projects/image/upload/v1620410709/Portfolio/confy-images/confy-desktop_oltxyg.png)
 
 Mobile version
 
-![Mobile Version](https://raw.githubusercontent.com/alxmcr/confy-app/main/screenshoots/mobile/confy-mobile.png?token=ACCJR2MAHSIISZU23DBOPJTASS466)
+![Mobile Version](https://res.cloudinary.com/images-alex-projects/image/upload/v1620410714/Portfolio/confy-images/confy-mobile_wl24mj.png)
   
 ## Demo
 
